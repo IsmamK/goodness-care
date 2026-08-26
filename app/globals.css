@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue-dark:  #1a3580;
+  --blue-mid:   #1e6eb5;
+  --blue-light: #4facde;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll-reveal animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-animate-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-animate-left.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+.scroll-animate-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-animate-right.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delay utilities */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+/* Marquee / infinite scroll */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 25s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.btn-blue {
+  @apply text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  background: linear-gradient(to right, #4facde, #1a3580);
+}
+.btn-blue:hover {
+  background: linear-gradient(to right, #1a3580, #4facde);
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-2;
+  color: #1a3580;
+}
+
+.section-subtitle {
+  @apply text-gray-500 mb-8;
+}
