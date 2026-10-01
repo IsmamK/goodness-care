@@ -41,7 +41,7 @@ export default function WhyUs() {
         {/* Header */}
         <div className="text-center mb-14 scroll-animate animate-in">
           <p className="text-sm font-semibold uppercase tracking-widest mb-3 text-blue-200">Our Advantages</p>
-          <h2 className="text-4xl font-bold mb-4 text-white">Why Choose Goodness Service Ltd.</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">Why Choose Goodness Service</h2>
           <div className="w-20 h-1 mx-auto rounded-full bg-white/40" />
         </div>
 

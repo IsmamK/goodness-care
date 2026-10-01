@@ -100,7 +100,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-white font-semibold mb-1">Email</p>
-                <a href="mailto:goodness2026@gmail.com" className="hover:text-white transition-colors">goodness2026@gmail.com</a>
+                <a href="mailto:goodnssl2026@gmail.com" className="hover:text-white transition-colors">goodnssl2026@gmail.com</a>
               </div>
             </div>
           </div>

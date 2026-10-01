@@ -10,11 +10,9 @@ const coreValues = [
 ]
 
 const team = [
-  { name: 'Tareq Abdullah', role: 'Chief Executive Officer', photo: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/whatsapp-image-2025-09-09-at-154549_bda5f384.jpg' },
-  { name: 'Md. Nazrul Islam', role: 'Head of Operations', photo: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/md-nazrul-islam-head-of-operations.jpg' },
-  { name: 'Aleure Rahman', role: 'Head of Accounts', photo: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/aleure-rahman-head-of-accounts.jpg' },
-  { name: 'Md. Azizul Islam', role: 'General Manager', photo: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/md-azizul-islam-general-manager.jpg' },
-  { name: 'Sunny Quazi Saad Billah', role: 'HR & Coordination Manager', photo: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/sunny-quazi-saad-billah-hr-coordination-manager.jpg' },
+  { name: 'MD Sayful Islam', role: 'Managing Director', photo: '/md-sayful-islam.jpg' },
+  { name: 'Mahbub Alam', role: 'Director', photo: '/mahbub-alam.jpg' },
+  { name: 'Md. Jonyrul Islam', role: 'Director', photo: '/md-jonyrul-islam.jpg' },
 ]
 
 export default function AboutPage() {
@@ -23,9 +21,17 @@ export default function AboutPage() {
       {/* Hero Banner */}
       <div className="py-20" style={{ background: 'linear-gradient(135deg, #1a3580, #4facde)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-blue-100 text-sm font-semibold tracking-widest uppercase mb-3">Goodness Service Ltd.</p>
+          <p className="text-blue-100 text-sm font-semibold tracking-widest uppercase mb-3">Goodness Service</p>
           <h1 className="text-5xl font-bold text-white mb-4">About Us</h1>
-          <p className="text-blue-100 max-w-2xl mx-auto">GOVT. APPROVED RECRUITING LICENCE NO. RL-2068 — Your trusted partner for global workforce solutions</p>
+          <p className="text-blue-100 max-w-2xl mx-auto mb-8">GOVT. APPROVED RECRUITING LICENCE NO. RL-2068 — Your trusted partner for global workforce solutions</p>
+          <a
+            href="/documents/Goodness-Services-Profile.pdf"
+            download
+            className="inline-block px-7 py-3.5 rounded-lg font-semibold transition-all duration-200 bg-white hover:shadow-lg"
+            style={{ color: '#1a3580' }}
+          >
+            Download Company Profile
+          </a>
         </div>
       </div>
 
@@ -39,10 +45,10 @@ export default function AboutPage() {
                 Trusted Recruitment Partner Since Establishment
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Goodness Service Ltd., holding the prestigious Government Approved Recruiting Licence No. RL-2068, stands as one of the most trusted and experienced human resource management consultancy firms in Bangladesh. With a proven track record of exporting over 50,000 unskilled, semi-skilled, and skilled human resources globally, we offer a comprehensive one-stop solution for both employers and employees.
+                Goodness Service, holding the prestigious Government Approved Recruiting Licence No. RL-2068, stands as one of the most trusted and experienced human resource management consultancy firms in Bangladesh. With a proven track record of exporting over 50,000 unskilled, semi-skilled, and skilled human resources globally, we offer a comprehensive one-stop solution for both employers and employees.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Led by CEO Tareq Abdullah, our dedicated and experienced team is equipped to provide exceptional service through a modern IT-based work process. We pride ourselves on commitment to ethical business practices, ensuring trusted partnerships with all our clients.
+                Led by Managing Director MD Sayful Islam, our dedicated and experienced team is equipped to provide exceptional service through a modern IT-based work process. We pride ourselves on commitment to ethical business practices, ensuring trusted partnerships with all our clients.
               </p>
               <ul className="space-y-3 mb-8">
                 {['Government Licensed & Compliant', 'Skilled Workforce Export — 50,000+ Workers', 'Transparent & Ethical Hiring Process'].map((item) => (
@@ -132,12 +138,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CEO Message */}
+      {/* MD Message */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 scroll-animate animate-in">
             <p className="text-sm font-semibold tracking-widest uppercase mb-3" style={{ color: '#4facde' }}>LEADERSHIP</p>
-            <h2 className="text-4xl font-bold mb-2" style={{ color: '#1a3580' }}>From the CEO&apos;s Desk</h2>
+            <h2 className="text-4xl font-bold mb-2" style={{ color: '#1a3580' }}>A Word from the Managing Director</h2>
           </div>
           <div
             className="scroll-animate animate-in rounded-2xl p-10 border-2"
@@ -145,15 +151,15 @@ export default function AboutPage() {
           >
             <div className="flex flex-col sm:flex-row gap-8 items-start mb-6">
               <img
-                src="https://stechhr.com/backend/media/uploaded_images/uploaded_images/whatsapp-image-2025-09-09-at-154549_bda5f384.jpg"
-                alt="Tareq Abdullah, CEO"
+                src="/md-sayful-islam.jpg"
+                alt="MD Sayful Islam, Managing Director"
                 className="w-28 h-28 object-cover rounded-full border-4 flex-shrink-0"
                 style={{ borderColor: '#4facde' }}
               />
               <div>
                 <div className="text-5xl font-serif mb-4" style={{ color: 'rgba(79,172,222,0.3)' }}>&ldquo;</div>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  At Goodness Service Ltd., our mission has always been clear: to connect the skilled workforce of Bangladesh with global opportunities while maintaining the highest standards of ethical recruitment. Holding Government Approved Recruiting Licence No. RL-2068 is not just a credential — it is a commitment we uphold every single day.
+                  At Goodness Service, our mission has always been clear: to connect the skilled workforce of Bangladesh with global opportunities while maintaining the highest standards of ethical recruitment. Holding Government Approved Recruiting Licence No. RL-2068 is not just a credential — it is a commitment we uphold every single day.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Over the years, we have proudly facilitated the deployment of over 50,000 workers across more than 20 countries. Each placement represents a family&apos;s hope, a career built, and trust honored.
@@ -164,8 +170,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="border-t-2 pt-6" style={{ borderColor: '#e2e8f0' }}>
-              <p className="font-bold" style={{ color: '#1a3580' }}>Tareq Abdullah</p>
-              <p className="text-sm" style={{ color: '#4facde' }}>Chief Executive Officer, Goodness Service Ltd.</p>
+              <p className="font-bold" style={{ color: '#1a3580' }}>MD Sayful Islam</p>
+              <p className="text-sm" style={{ color: '#4facde' }}>Managing Director, Goodness Service</p>
             </div>
           </div>
         </div>

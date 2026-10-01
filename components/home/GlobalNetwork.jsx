@@ -3,25 +3,25 @@
 const countries = [
   {
     name: 'Saudi Arabia',
-    workers: '2,000+',
+    workers: '20,000+',
     image: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/saudi-1-760x4752x.jpg',
     flag: 'https://flagcdn.com/sa.svg',
   },
   {
     name: 'United Arab Emirates',
-    workers: '1,500+',
+    workers: '10,000+',
     image: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80',
     flag: 'https://flagcdn.com/ae.svg',
   },
   {
     name: 'Qatar',
-    workers: '800+',
+    workers: '5000+',
     image: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/herobestdohahotels-rafflesdoha-exteriorday-creditrafflesdoha.jpg',
     flag: 'https://flagcdn.com/qa.svg',
   },
   {
     name: 'Malaysia',
-    workers: '3,000+',
+    workers: '10,000+',
     image: 'https://stechhr.com/backend/media/uploaded_images/uploaded_images/kuala-lumpur.avif',
     flag: 'https://flagcdn.com/my.svg',
   },

@@ -1,7 +1,7 @@
 const galleryImages = [
   'https://stechhr.com.bd/wp-content/uploads/2022/05/silhouette-construction-workers-fabricating-steel-reinforcement-bar-construction-si.jpeg',
   'https://stechhr.com.bd/wp-content/uploads/2022/05/construction-worker-truss-installation.jpeg',
-  'https://stechhr.com/backend/media/uploaded_images/uploaded_images/screenshot-2025-12-06-161717.png',
+
   'https://stechhr.com/backend/media/uploaded_images/uploaded_images/saudi-1-760x4752x.jpg',
   'https://stechhr.com/backend/media/uploaded_images/uploaded_images/kuala-lumpur.avif',
   'https://stechhr.com/backend/media/uploaded_images/uploaded_images/herobestdohahotels-rafflesdoha-exteriorday-creditrafflesdoha.jpg',

@@ -5,14 +5,7 @@ import Link from 'next/link'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  {
-    label: 'Registration',
-    dropdown: [
-      { label: 'Worker Registration', href: '/worker-registration' },
-      { label: 'Agent Registration', href: '/agent-registration' },
-      { label: 'Apply for Jobs Now', href: '/apply-jobs-now' },
-    ],
-  },
+
   { label: 'Medical Report', href: '/medical-report' },
   { label: 'Demand Submission', href: '/demand-submission' },
   { label: 'Training', href: '/training' },
@@ -31,11 +24,11 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             <img
               src="/logo.png"
-              alt="Goodness Service Ltd."
+              alt="Goodness Service"
               className="h-10 w-auto object-contain"
             />
             <div className="flex flex-col leading-tight">
-              <span className="text-sm font-bold" style={{ color: '#1a3580' }}>Goodness Service <span style={{ color: '#4facde' }}>Ltd.</span></span>
+              <span className="text-sm font-bold" style={{ color: '#1a3580' }}>Goodness Service</span>
               <span className="text-xs font-medium tracking-wide" style={{ color: '#1e6eb5' }}>RL-2068</span>
             </div>
           </Link>

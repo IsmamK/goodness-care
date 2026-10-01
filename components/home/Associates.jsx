@@ -1,14 +1,25 @@
 'use client'
 
 const logos = [
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/JG_Facility_Management_Logo_updated.png', alt: 'JG Facility Management' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/Stech_Holidays_logo.jpeg', alt: 'Stech Holidays' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/Blockchain_256_logo.png', alt: 'Blockchain 256' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/JG_Healthcare_Logo_updated_yGIGB86.png', alt: 'JG Healthcare' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/Stech_HR_Consultant.JPG', alt: 'Stech HR Consultant' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/Stech-Group-Logo_1.gif', alt: 'Stech Group' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/stech_trading.JPG', alt: 'Stech Trading' },
-  { src: 'https://jgalfalah.com/backend/media/uploaded_images/Beanskafe.JPG', alt: 'Beanskafe' },
+  { src: '/clients/nationgate.png', alt: 'NationGate' },
+  { src: '/clients/koito.png', alt: 'Koito' },
+  { src: '/clients/samsung.png', alt: 'Samsung' },
+  { src: '/clients/hyundai.png', alt: 'Hyundai' },
+  { src: '/clients/jp-printers.png', alt: 'J.P. Printers Sdn. Bhd.' },
+  { src: '/clients/napco.png', alt: 'Napco Security Technologies' },
+  { src: '/clients/fang-pai.png', alt: 'Fang & Pai Industries Sdn Bhd' },
+  { src: '/clients/cab-cakaran.png', alt: 'CAB Cakaran Corporation Berhad' },
+  { src: '/clients/pamir.png', alt: 'Pamir Development Sdn Bhd' },
+  { src: '/clients/mynews.png', alt: 'myNEWS' },
+  { src: '/clients/torto.png', alt: 'Torto' },
+  { src: '/clients/just-energy.png', alt: 'Just Energy Sdn Bhd' },
+  { src: '/clients/texas-chicken.png', alt: 'Texas Chicken' },
+  { src: '/clients/cellini.png', alt: 'Cellini' },
+  { src: '/clients/xsd.png', alt: 'XSD International Paper' },
+  { src: '/clients/doosan.png', alt: 'Doosan' },
+  { src: '/clients/ytl.png', alt: 'YTL Corporation Berhad' },
+  { src: '/clients/fortress.png', alt: 'Fortress' },
+  { src: '/clients/xinyi-solar.png', alt: 'Xinyi Solar Holdings' },
 ]
 
 export default function Associates() {
@@ -17,7 +28,7 @@ export default function Associates() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 scroll-animate animate-in">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#4facde' }}>Our Partners</p>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#4facde' }}>Our Clients</p>
           <h2 className="text-3xl font-bold mb-4" style={{ color: '#1a3580' }}>Trusted By Global Leaders</h2>
           <div className="w-20 h-1 mx-auto rounded-full" style={{ background: 'linear-gradient(to right, #4facde, #1a3580)' }} />
         </div>
@@ -28,7 +39,7 @@ export default function Associates() {
             {[...logos, ...logos].map((logo, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 mx-6 h-16 w-36 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+                className="flex-shrink-0 mx-6 h-16 w-36 flex items-center justify-center transition-all duration-300"
               >
                 <img
                   src={logo.src}
